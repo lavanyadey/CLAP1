@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+   char Operator;
+   float number1, number2, result = 0;
+   printf("\n Enter any one operator like \n (Addition) + \n (Subtraction) -, \n (Multiplication) *,  \n (Division) / : ");
+   scanf("%c", &Operator);
+   printf("Enter number1 and number2 \n : ");
+   scanf("%f%f", &number1, &number2);
+   switch(Operator){
+      case '+': result = number1 + number2;
+         break;
+      case '-': result = number1 - number2;
+         break;
+      case '*': result = number1 * number2;
+         break;
+      case '/': result = number1 / number2;
+         break;
+      default: printf("\n Invalid Operator ");
+   }
+   printf("The value = %f", result);
+   return 0;
